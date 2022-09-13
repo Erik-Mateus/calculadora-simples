@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="shortcut icon" href="https://thumbs.dreamstime.com/b/%C3%ADcone-do-vetor-da-calculadora-ilustra%C3%A7%C3%A3o-de-contagem-preto-e-branco-%C3%ADcone-linear-cont%C3%ADnuo-92848524.jpg" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div>
+        <img class="fundo" src="https://i.pinimg.com/originals/17/75/b6/1775b615718992ee092cb93102190b09.jpg" alt="fundo">
+    </div>
+    
+    <div class="calc">
+            <h1 class="calculadora">Calculadora</h1>
+            <p id="resultado"></p>
+
+        <table>
+            <tr class="allbtn">
+                <td><button onclick="clean()" class="btn">C</button></td>
+                <td><button onclick="back()" class="btn"><</button></td>
+                <td><button onclick="insert('/')" class="btn">/</button></td>
+                <td><button onclick="insert('*')" class="btn">*</button></td>
+            </tr>
+            <tr class="allbtn">
+                <td><button onclick="insert('9')" class="btn">9</button></td>
+                <td><button onclick="insert('8')" class="btn">8</button></td>
+                <td><button onclick="insert('7')" class="btn">7</button></td>
+                <td><button onclick="insert('-')" class="btn">-</button></td>
+            </tr>
+            <tr class="allbtn">
+                <td><button onclick="insert('6')" class="btn">6</button></td>
+                <td><button onclick="insert('5')" class="btn">5</button></td>
+                <td><button onclick="insert('4')" class="btn">4</button></td>
+                <td><button onclick="insert('+')" class="btn">+</button></td>
+            </tr>
+            <tr class="allbtn">
+                <td><button onclick="insert('3')" class="btn">3</button></td>
+                <td><button onclick="insert('2')" class="btn">2</button></td>
+                <td><button onclick="insert('1')" class="btn">1</button></td>
+                <td rowspan="2"><button onclick="calcular()" class="btn" style="height: 108px;">=</button></td>
+            </tr>
+            <tr class="allbtn">
+                <td colspan="2"><button onclick="insert('0')" class="btn" style="width: 108px;">0</button></td>
+                <td><button onclick="insert('.')" class="btn">.</button></td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
